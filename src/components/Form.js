@@ -17,7 +17,8 @@ function Form({ img }) {
     const amounts = [10, 20, 50, 100];
 
     return (
-        <div
+        <div    id="form"
+
             className="m-0 p-0"
             style={{
                 backgroundImage: `url(${img || "fallback-image.jpg"})`,
@@ -37,13 +38,14 @@ function Form({ img }) {
                         minHeight: "90px",
                         fontSize: "24px",
                         backgroundColor: "rgba(0, 0, 0, 0.5)",
+                        maxWidth: '300px'
                     }}
                     className="m-0 p-2 pb-3 ps-5 pe-5 col-auto text-center fw-bold rounded-bottom-circle d-flex justify-content-center align-items-center border border-2 border-top-0"
                 >
                     Dołącz do nas!
                 </div>
                 <div style={{ height: "45px", width: "100%" }}></div>
-                <div className="m-0 p-0 row justify-content-center">
+                <div style={{maxWidth: '256px'}} className="m-0 p-0 row justify-content-center">
                     {amounts.map((amount, index) => {
                         const isSelected = parseInt(sum) === amount;
                         return (
@@ -67,10 +69,10 @@ function Form({ img }) {
                                     border: "2px solid var(--bs-white)",
                                     objectFit: "cover",
                                     backgroundColor: "rgba(0, 0, 0, 0.5)",
-                                    maxWidth: "300px",
+                                    maxWidth: "150px",
                                     fontStyle: "italic",
                                 }}
-                                className={`o_btn_nav col m-2 row justify-content-center align-items-center rounded-pill ${
+                                className={`o_btn_nav col m-2 row justify-content-center align-items-center rounded-4 ${
                                     isSelected
                                         ? "disabled border-primary bg-primary"
                                         : ""
@@ -101,7 +103,7 @@ function Form({ img }) {
                         boxShadow: "1px 15px 60px black",
                         minHeight: "60px",
                         fontSize: "21px",
-                        maxWidth: "240px",
+                        maxWidth: "300px",
                     }}
                     className="o_btn_nav p-1 ps-5 pe-5 rounded-4"
                     data-bs-toggle="modal"

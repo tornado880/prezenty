@@ -21,8 +21,10 @@ function Form({ img }) {
             className="m-0 p-0"
             style={{
                 backgroundImage: `url(${img || "fallback-image.jpg"})`,
-                backgroundSize: "cover",
-                backgroundPosition: "bottom",
+                backgroundPosition: "center",
+                objectFit: "cover",
+                position: "relative",
+                height: "auto",
             }}
         >
             <div

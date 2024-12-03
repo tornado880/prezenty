@@ -99,6 +99,25 @@ function Dostawa() {
 
     return (
         <div>
+<a 
+    href="#form" 
+    style={{
+        position: 'fixed', 
+        top: '0', 
+        left:'50vw',
+        zIndex: '999', 
+        // width: '100%',
+        minHeight: '30px',
+        fontStyle: 'italic',
+        transform: 'translateX(-50%)',
+
+    }} 
+    className="o_btn_nav m-0 p-0 ps-4 pe-4 fs-6 text-white text-center text-decoration-none rounded-bottom-4 border-primary"
+>
+    
+        Dołącz do nas!
+</a>
+
             {/* <!-- Modal 1 --> */}
             <div
                 className="m-0 p-3 modal fade rounded-5"
@@ -222,7 +241,6 @@ function Dostawa() {
             </div>
 
             {/* <!-- Modal 2 --> */}
-
             <div
                 className="m-0 p-0 modal fade border-0 "
                 id="exampleModal2"

@@ -39,9 +39,9 @@ function Home() {
 
             <Banner title="Prezenty świąteczne dla dzieci z domów dziecka" img={img_b0} />
 
-            <Opis img={img_b3} img_1={img_o1} img_2={img_o2} img_3={img_o3} img_4={img_o4} />
+            <Opis img={img_b2} img_1={img_o1} img_2={img_o2} img_3={img_o3} img_4={img_o4} />
             
-            <Galeria img={img_b0} img_1={img_g1} img_2={img_g2} img_3={img_g3} img_4={img_g4} img_5={img_g5} img_6={img_g6} img_7={img_g7} img_8={img_g8} img_9={img_g9} img_10={img_g10} img_11={img_g11} img_12={img_g12} />
+            <Galeria img={img_b3} img_1={img_g1} img_2={img_g2} img_3={img_g3} img_4={img_g4} img_5={img_g5} img_6={img_g6} img_7={img_g7} img_8={img_g8} img_9={img_g9} img_10={img_g10} img_11={img_g11} img_12={img_g12} />
     
             <Form img={img_b2} />
 
